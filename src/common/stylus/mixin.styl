@@ -1,0 +1,55 @@
+bg-img($url)
+  background-image url($url + "@2x.png")
+  @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+    background-image url($url +"@3x.png")
+
+border-1px-bottom($color)
+  position relative
+  &:after
+    content " "
+    display block
+    position absolute
+    bottom 0
+    left 0
+    border-bottom 1px solid $color
+    width 100%
+    @media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+      -webkit-transform scaleY(0.5)
+      transform scaleY(0.5)
+    @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+      -webkit-transform scaleY(0.33)
+      transform scaleY(0.33)
+
+border-1px-top($color)
+  position relative
+  &:after
+    content " "
+    display block
+    position absolute
+    top 0
+    left 0
+    border-top 1px solid $color
+    width 100%
+    @media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+      -webkit-transform scaleY(0.5)
+      transform scaleY(0.5)
+    @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+      -webkit-transform scaleY(0.33)
+      transform scaleY(0.33)
+
+border-1px-right($color)
+  position relative
+  &:after
+    content " "
+    display block
+    position absolute
+    bottom 0
+    right 0
+    border-right 1px solid $color
+    height 100%
+    @media (-webkit-min-device-pixel-ratio:2),(min-device-pixel-ratio:2)
+      -webkit-transform scaleX(0.5)
+      transform scaleX(0.5)
+    @media (-webkit-min-device-pixel-ratio:3),(min-device-pixel-ratio:3)
+      -webkit-transform scaleX(0.33)
+      transform scaleX(0.33)
