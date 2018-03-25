@@ -16,7 +16,6 @@ Vue.use(VueResource);
 
 let router = new VueRouter({
   mode: 'history',
-  // linkActiveClass: 'active',
   routes: [
     {
       path: '/',
@@ -36,7 +35,6 @@ let router = new VueRouter({
     },
   ]
 });
-// Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 new Vue({

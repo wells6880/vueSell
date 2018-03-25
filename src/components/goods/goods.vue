@@ -3,7 +3,8 @@
     <div class="goods">
       <div class="goods-menu" ref="menu">
         <ul>
-          <li v-for="(item,index) in goods" class="goods-menu-name" @click="selectMenu(index,$event)" :class="{'menu-active':activeIndex === index}" ref="menuList">
+          <li v-for="(item,index) in goods" class="goods-menu-name" @click="selectMenu(index,$event)" 
+          :class="{'menu-active':activeIndex === index}" ref="menuList">
             <span class="goods-menu-name-text">
               <v-supportsicon :supportType="item.type" :sizeType="3" v-if="item.type > 0"></v-supportsicon>
               {{item.name}}
